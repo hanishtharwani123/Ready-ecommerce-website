@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READY-Just what you need</title>
+    <link rel="icon" href="" type="image/icon type">
+    <link rel="stylesheet" href="new_pro.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <div class="container">
+        <header>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Payment Information</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/Ellipse 2.png" alt="">
+            </div>
+        </header>
+
+        <div class="reg">
+            <h1 class="store">Add New Product</h1>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="blo">
+                    <div class="card1">
+                        <label class="name">Name</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Description</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Price</label>
+                        <input type="number" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Other Property</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Variants</label>
+                        <input type="text" class="store-name">
+                    </div>
+
+                    <div class="buttn">
+                        <button class="btn">ADD</button>
+                    </div>
+
+                </div>
+
+                <form id="registration-form">
+                    <div id="add-photos">
+                        <label for="photos"><img src="images/icons8-add-image-100(1).png" class="pict"></label>
+                        <h1 class="add">Add Photos</h1>
+                        <input type="file" id="photos" name="photos" multiple>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>

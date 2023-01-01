@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 150vh;
+    background: linear-gradient(180deg, #000000 35.82%, #A32EFF 100%);
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.3rem;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+    padding-left: 4rem;
+    z-index: 9999;
+    color: #fff;
+}
+
+header.sticky {
+    padding-top: 2rem;
+    background: #ffffff;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links ul li {
+    padding-left: 2rem;
+    padding-right: 5rem;
+    position: relative;
+}
+
+.nav-links ul li a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 0.4rem;
+    background: #8F00FF;
+    display: block;
+    margin: auto;
+    transition: width 0.2s ease-in-out;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    position: relative;
+    right: 10rem;
+    bottom: 1rem;
+}
+
+.reg {
+    display: flex;
+    justify-content: center;
+}
+
+.store {
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 4.9rem;
+    color: #FFF;
+    margin-top: 18rem;
+    font-family: 'Roboto Slab', serif;
+    width: 67rem;
+    height: 5rem;
+    background: #7d0ab1;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+
+}
+
+.box {
+    width: 92rem;
+    height: 73rem;
+    background: #fff;
+    margin-top: 4rem;
+    border: .1rem solid #D9D9D9;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    padding-left: 5rem;
+    display: flex;
+}
+
+.card1 {
+    display: flex;
+    padding-top: 6rem;
+}
+
+.name {
+    font-size: 1.8rem;
+    line-height: 3.819rem;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.store-name {
+    width: 39rem;
+    height: .3rem;
+    border-radius: 0.6rem;
+    background: #D6D4D430;
+    box-shadow: inset 0px 1px 4px rgba(203, 202, 202, 0.03);
+    border: .2rem solid #00000026;
+    outline: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: #4d4c4c;
+}
+
+label {
+    width: 14rem;
+    display: inline-block;
+}
+
+.btn {
+    width: 24rem;
+    height: 5.3rem;
+    border-radius: 0.7rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: #8F00FF;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3.274rem;
+    border: none;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.buttn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: black;
+}
+
+#add-photos {
+    display: flex;
+    align-items: center;
+}
+
+#add-photos label {
+    margin-right: 1rem;
+    color: blue;
+    font-size: 1.8rem;
+}
+
+#add-photos input[type="file"] {
+    display: none;
+}
+
+.pict {
+    margin-left: 10rem;
+    margin-top: 1rem;
+    width: 12rem;
+    cursor: pointer;
+    background: #0000002b;
+    border-radius: 21rem;
+    padding: 3rem;
+    transition: .2s;
+}
+
+.add {
+    margin-top: 22rem;
+    margin-left: -2rem;
+    font-size: 2rem;
+    color: #434345a1;
+}
+
+.pict:hover {
+    background: #444445f4;
+}

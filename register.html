@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READY-Just what you need</title>
+    <link rel="icon" href="" type="image/icon type">
+    <link rel="stylesheet" href="register.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- PAGE 1 -->
+    <div class="container">
+        <header>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sell with Ready</a></li>
+                    <li><a href="#">Go to Marketplace</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/Ellipse 2.png" alt="">
+            </div>
+        </header>
+
+        <div class="reg">
+            <h1 class="store">Register your Store</h1>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="blo">
+                    <div class="card1">
+                        <label class="name">Store Name</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Owner Name</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">GSTIN</label>
+                        <input type="number" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Address Line 1</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Address Line 2</label>
+                        <input type="text" class="store-name">
+                    </div>
+                    <div class="card1">
+                        <label class="name">Category</label>
+                        <input type="text" class="store-name">
+                    </div>
+
+                    <div class="buttn">
+                        <button class="btn">REGISTER NOW</button>
+                    </div>
+                </div>
+                <form id="registration-form">
+                    <div id="add-photos">
+                        <label for="photos"><img src="images/icons8-add-image-100(1).png" class="pict"></label>
+                        <h1 class="add">Add Photos</h1>
+                        <input type="file" id="photos" name="photos" multiple>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>
